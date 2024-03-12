@@ -271,3 +271,7 @@ body {
   border: 1px solid var(--footer-border);
   color: var(--search-btn-hover);
 }
+
+.display-none {
+  display: none;
+}
