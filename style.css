@@ -1,0 +1,229 @@
+:root {
+  --footer-bg: #f2f2f2;
+  --footer-border: #dadce0;
+  --text-color: #1f1f1f;
+  --search-color: #9aa0a6;
+  --login-bg: rgb(26, 115, 232);
+  --login-color: #ffffff;
+  --service-btn: #5f6368;
+  --header-text: rgba(0, 0, 0, 0.87);
+  --search-btn-hover: #202124;
+  --search-btn-bg: #f8f9fa;
+  --search-btn-text: #3c4043;
+  --padding-regular: 0.9375rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+}
+
+.nav__link {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  padding: var(--padding-regular);
+}
+
+.nav__link:hover,
+.nav__link:active {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.375rem;
+  min-height: 3.75rem;
+}
+
+.header__list {
+  gap: var(--padding-regular);
+  padding-right: var(--padding-regular);
+}
+
+.header__link {
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+  vertical-align: middle;
+  color: var(--header-text);
+  padding: 0;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+}
+
+.service__btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.service__btn:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+}
+
+.service__btn:active {
+  background-color: rgba(60, 64, 67, 0.12);
+}
+
+.service__icon {
+  fill: var(--service-btn);
+}
+
+.login__btn {
+  background-color: var(--login-bg);
+  color: var(--login-color);
+  margin: 0 0.5rem;
+  padding: 0.5625rem 1.4375rem;
+  line-height: 1rem;
+  min-width: 6rem;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  vertical-align: middle;
+  border: 1px solid transparent;
+}
+
+.login__btn:hover {
+  background: #1b66c9;
+  -webkit-box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.15),
+    0 1px 2px 0 rgba(60, 64, 67, 0.3);
+  box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.15),
+    0 1px 2px 0 rgba(60, 64, 67, 0.3);
+}
+
+.login__btn:active {
+  background: #1b63c1;
+  -webkit-box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.15),
+    0 1px 2px 0 rgba(60, 64, 67, 0.3);
+  box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.15),
+    0 1px 2px 0 rgba(60, 64, 67, 0.3);
+}
+
+.footer {
+  background-color: var(--footer-bg);
+  font-family: Arial, sans-serif;
+}
+
+.footer__top {
+  padding: var(--padding-regular) calc(var(--padding-regular) * 2);
+  border-bottom: 1px solid var(--footer-border);
+  font-size: 0.9375rem;
+}
+.footer__bottom {
+  padding: 0 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.logo__wrapper {
+  flex-grow: 0.79;
+  display: flex;
+  align-items: flex-end;
+}
+
+.search-form__wrapper {
+  flex-grow: 2;
+}
+
+.search-form {
+  padding: 1.625rem 1.25rem 1.25rem;
+  max-height: 10rem;
+  max-width: 36.5rem;
+  background-color: #1b63c125;
+}
+
+.input__wrapper {
+}
+
+.search-input__label {
+  background-color: rgba(137, 43, 226, 0.142);
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  min-height: 2.75rem;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #dfe1e5;
+  border-radius: 1.5rem;
+}
+
+.search-input__label:hover {
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: transparent;
+}
+
+.search-input__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--search-color);
+  padding-right: 0.8125rem;
+}
+
+.search-input {
+  position: relative;
+  border: none;
+}
+
+.search-form__btn {
+  background-color: var(--search-btn-bg);
+  border: 1px solid var(--search-btn-bg);
+  color: var(--search-btn-text);
+  line-height: 1.6875rem;
+  margin: 0.6875rem 0.25rem;
+  padding: 0 1rem;
+  height: 2.25rem;
+  min-width: 3.375rem;
+}
+
+.search-form__btn:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border: 1px solid var(--footer-border);
+  color: var(--search-btn-hover);
+}
