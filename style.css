@@ -224,7 +224,6 @@ body {
 .search-form__icon {
   width: 1.25rem;
   height: 1.25rem;
-  flex-basis: 1.25rem;
   fill: var(--search-color);
   margin-right: 0.8125rem;
 }
