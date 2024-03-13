@@ -34,13 +34,13 @@
           </li>
         </ul>
       </nav>
-      <div class="service">
+      <div class="services">
         <button
-          class="service__btn btn"
+          class="services__btn-toggler btn btn--rounded"
           type="button"
-          aria-label="Additional services"
+          aria-label="Additional servicess"
         >
-          <svg class="service__icon" focusable="false" viewBox="0 0 24 24">
+          <svg class="services__icon" focusable="false" viewBox="0 0 24 24">
             <path
               d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
             ></path>
@@ -54,6 +54,515 @@
           </svg>
         </button>
         <button class="login__btn btn" type="button">Увійти</button>
+      </div>
+
+      <div class="services-menu display-none">
+        <div class="services-menu__inner">
+          <div class="services-menu__navs">
+            <nav class="services-menu__nav">
+              <ul class="services-menu__list">
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--account"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name-wrap">
+                      <span class="services-menu__name">Обліковий запис</span>
+                    </span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--search"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Пошук</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--maps"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Карти</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://www.youtube.com/?authuser=0"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--youtube"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">YouTube</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--play"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Play</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--news"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Новини</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://mail.google.com/mail/?authuser=0"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--gmail"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Gmail</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--meet"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Meet</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://translate.google.com/"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--translate"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Перекладач</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://translate.google.com/"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--translate"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Перекладач</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="services-menu__nav">
+              <ul class="services-menu__list">
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--account"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name-wrap">
+                      <span class="services-menu__name">
+                        Обліковийзапис Обліковий запис</span
+                      >
+                    </span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--search"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Пошук</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--maps"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Карти</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://www.youtube.com/?authuser=0"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--youtube"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">YouTube</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--play"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Play</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--news"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Новини</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://mail.google.com/mail/?authuser=0"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--gmail"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Gmail</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--meet"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Meet</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://translate.google.com/"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--translate"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Перекладач</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="services-menu__nav">
+              <ul class="services-menu__list">
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--account"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name-wrap">
+                      <span class="services-menu__name">
+                        Обліковийзапис Обліковий запис</span
+                      >
+                    </span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--search"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Пошук</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--maps"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Карти</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://www.youtube.com/?authuser=0"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--youtube"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">YouTube</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--play"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Play</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--news"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Новини</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://mail.google.com/mail/?authuser=0"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--gmail"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Gmail</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--meet"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Meet</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://translate.google.com/"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--translate"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Перекладач</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--account"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name-wrap">
+                      <span class="services-menu__name">
+                        Обліковийзапис Обліковий запис</span
+                      >
+                    </span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--search"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Пошук</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--maps"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Карти</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://www.youtube.com/?authuser=0"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--youtube"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">YouTube</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--play"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Play</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--news"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Новини</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://mail.google.com/mail/?authuser=0"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--gmail"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Gmail</span>
+                  </a>
+                </li>
+                <li class="services-menu__item">
+                  <a
+                    href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                    class="services-menu__link"
+                  >
+                    <span class="services-menu__icon-wrap">
+                      <span
+                        class="services-menu__icon services-menu__icon--meet"
+                      ></span>
+                    </span>
+                    <span class="services-menu__name">Meet</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="services-menu__bottom">
+            <a
+              href="https://about.google/products/"
+              class="services-menu__bottom-btn btn"
+            >
+              Більше від Google
+            </a>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -116,7 +625,6 @@
                         fill="#7b7b7b"
                         opacity="1"
                         data-original="#000000"
-                        class=""
                       ></path>
                     </g>
                   </svg>
@@ -224,7 +732,7 @@
             </li>
             <li class="nav__item">
               <a
-                href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"
+                href="https://www.google.com/servicess/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"
                 class="nav__link"
               >
                 Для бізнесу
