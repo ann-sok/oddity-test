@@ -4,18 +4,29 @@ document.addEventListener("DOMContentLoaded", () => {
   if (logoImg.dataset.altSrc) {
     luckyBtn.addEventListener("click", (event) => {
       event.preventDefault();
-      const currentSrc = [logoImg.src, logoImg.srcset, logoImg.alt];
-      const altSrc = [
-        logoImg.dataset.altSrc,
-        logoImg.dataset.altSrcset,
-        logoImg.dataset.altAlt,
-      ];
-      logoImg.src = altSrc[0];
-      logoImg.srcset = altSrc[1];
-      logoImg.alt = altSrc[2];
-      logoImg.dataset.altSrc = currentSrc[0];
-      logoImg.dataset.altSrcset = currentSrc[1];
-      logoImg.dataset.altAlt = currentSrc[2];
+      const imageProperties = {
+        current: {
+          src: logoImg.src,
+          srcset: logoImg.srcset,
+          alt: logoImg.alt,
+        },
+        alt: {
+          src: logoImg.dataset.altSrc,
+          srcset: logoImg.dataset.altSrcset,
+          alt: logoImg.dataset.altAlt,
+        },
+      };
+
+      ({
+        src: logoImg.src,
+        srcset: logoImg.srcset,
+        alt: logoImg.alt,
+      } = imageProperties.alt);
+      ({
+        src: logoImg.dataset.altSrc,
+        srcset: logoImg.dataset.altSrcset,
+        alt: logoImg.dataset.altAlt,
+      } = imageProperties.current);
     });
   }
 });
