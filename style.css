@@ -3,13 +3,18 @@
   --footer-border: #dadce0;
   --text-color: #1f1f1f;
   --search-color: #9aa0a6;
-  --login-bg: rgb(26, 115, 232);
+  --input-border: #dfe1e5;
+  --login-bg: #1a73e8;
+  --login-hover: #1b66c9;
+  --login-active: #1b63c1;
   --login-color: #ffffff;
   --service-btn: #5f6368;
-  --header-text: rgba(0, 0, 0, 0.87);
+  --header-text: #000000de;
   --search-btn-hover: #202124;
   --search-btn-bg: #f8f9fa;
   --search-btn-text: #3c4043;
+  --service-hover: #3c404314;
+  --service-active: #3c40431f;
   --padding-regular: 0.9375rem;
 }
 
@@ -25,7 +30,7 @@ html {
 
 body {
   font-family: Roboto, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--text-color);
   display: flex;
   flex-direction: column;
@@ -44,6 +49,7 @@ body {
 .nav__list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .nav__link {
@@ -97,11 +103,11 @@ body {
 }
 
 .service__btn:hover {
-  background-color: rgba(60, 64, 67, 0.08);
+  background-color: var(--service-hover);
 }
 
 .service__btn:active {
-  background-color: rgba(60, 64, 67, 0.12);
+  background-color: var(--service-active);
 }
 
 .service__icon {
@@ -122,7 +128,7 @@ body {
 }
 
 .login__btn:hover {
-  background: #1b66c9;
+  background: var(--login-hover);
   -webkit-box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.15),
     0 1px 2px 0 rgba(60, 64, 67, 0.3);
   box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.15),
@@ -130,7 +136,7 @@ body {
 }
 
 .login__btn:active {
-  background: #1b63c1;
+  background: var(--login-active);
   -webkit-box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.15),
     0 1px 2px 0 rgba(60, 64, 67, 0.3);
   box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.15),
@@ -151,6 +157,7 @@ body {
   padding: 0 1.25rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .main {
@@ -163,9 +170,8 @@ body {
 
 .logo__wrapper {
   flex-grow: 1;
-
-  height: calc(100% - 560px);
-  max-height: 290px;
+  height: calc(100% - 35rem);
+  max-height: 18.125rem;
   display: flex;
   align-items: flex-end;
 }
@@ -193,23 +199,21 @@ body {
 }
 
 .search-input__label {
-  background-color: rgba(137, 43, 226, 0.142);
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   min-height: 3rem;
   max-width: 36.5rem;
   width: 100%;
-  background: #fff;
-  border: 1px solid #dfe1e5;
+  background: var(--login-color);
+  border: 1px solid var(--input-border);
   border-radius: 1.5rem;
   padding: 0 0.5rem 0 0.847rem;
 }
 
 .search-input__label:hover {
-  background: #fff;
+  background: var(--login-color);
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
   border-color: transparent;
 }
@@ -223,7 +227,6 @@ body {
 }
 
 .search-input {
-  position: relative;
   border: none;
   line-height: 1.375rem;
   flex-grow: 1;
@@ -263,11 +266,11 @@ body {
   padding: 0 1rem;
   height: 2.25rem;
   min-width: 3.375rem;
+  cursor: pointer;
 }
 
 .search-form__btn:hover {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  background-color: #f8f9fa;
   border: 1px solid var(--footer-border);
   color: var(--search-btn-hover);
 }
