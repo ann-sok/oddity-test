@@ -226,6 +226,7 @@ body {
   height: 1.25rem;
   fill: var(--search-color);
   margin-right: 0.8125rem;
+  vertical-align: middle;
 }
 
 .search-form__input {
