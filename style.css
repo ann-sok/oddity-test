@@ -268,6 +268,22 @@ body {
   width: 100%;
 }
 
+.search-form__searchbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* width: 100%; */
+  position: relative;
+}
+
 .search-form__label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,12 +297,12 @@ body {
   -ms-flex-align: center;
   align-items: center;
   min-height: 3rem;
-  max-width: 36.5rem;
-  width: 100%;
+  width: 36.5rem;
+  max-width: 100%;
   background: var(--login-color);
   border: 1px solid var(--input-border);
   border-radius: 1.5rem;
-  padding: 0 0.5rem 0 0.847rem;
+  padding: 0 8rem 0 2.25rem;
 }
 
 .search-form__label:hover {
@@ -302,6 +318,8 @@ body {
   fill: var(--search-color);
   margin-right: 0.8125rem;
   vertical-align: middle;
+  position: absolute;
+  left: 0.875rem;
 }
 
 .search-form__input {
@@ -315,6 +333,16 @@ body {
   outline: transparent;
 }
 
+.search-form__input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  background: url("images/cancel-btn.svg") no-repeat;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0 0.25rem;
+}
+
 .search-form__btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,6 +353,8 @@ body {
   -ms-flex-align: center;
   align-items: center;
   margin-top: 0.125rem;
+  position: absolute;
+  right: 0.5rem;
 }
 .search-form__btn {
   -webkit-box-sizing: content-box;
@@ -334,6 +364,7 @@ body {
   background-color: transparent;
   border: none;
   padding: 0 0.5rem;
+  cursor: pointer;
 }
 
 .search-form__controls {

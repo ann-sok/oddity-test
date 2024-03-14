@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelector(".services-menu");
   const luckyBtn = document.getElementById("luckyBtn");
   const logoImg = document.querySelector(".logo__img");
+  const searchInput = document.querySelector(".search-form__input");
 
   servicesBtn.addEventListener("click", (event) => {
     event.preventDefault();
@@ -45,4 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
       } = logoImgProperties.current);
     });
   }
+
+  searchInput.addEventListener("input", () => {
+    if (searchInput.value !== "") {
+      searchInput.style.borderRight = "1px solid #dadce0";
+    } else {
+      searchInput.style.borderRight = "none";
+    }
+  });
 });
