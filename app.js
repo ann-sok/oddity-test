@@ -17,7 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   if (luckyBtn) {
-    if (!logoImg) return;
+    if (!logoImg) {
+      return;
+    }
 
     luckyBtn.addEventListener("click", (event) => {
       event.preventDefault();

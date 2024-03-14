@@ -127,6 +127,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .services__btn-toggler:hover {
@@ -404,7 +405,7 @@ body {
   box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.3);
   padding: 0.5rem;
   width: 21.5rem;
-  max-width: 90%;
+  max-width: 90vw;
   position: absolute;
   top: 3.75rem;
   right: 1.375rem;
