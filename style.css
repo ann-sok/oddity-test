@@ -127,7 +127,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .services__btn-toggler:hover {
@@ -514,10 +514,6 @@ body {
   background-color: rgb(221, 227, 234);
   height: auto;
   z-index: 1;
-}
-
-.services-menu__icon-wrap {
-  display: block;
 }
 
 .services-menu__icon {
